@@ -4,7 +4,7 @@ langchain-openai
 langchain
 openai
 pypdf
-chromadb
+chromadb==0.4.9
 tiktoken
 pysqlite3-binary
 streamlit-extras
