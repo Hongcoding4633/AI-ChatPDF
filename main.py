@@ -1,5 +1,8 @@
 # 클라우드용
-__import__('pysqlite3')
+# __import__('pysqlite3')
+# import sys
+# sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+import pysqlite3
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
@@ -16,8 +19,6 @@ import os
 from streamlit_extras.buy_me_a_coffee import button
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 from langchain.callbacks.base import BaseCallbackHandler
-import chromadb.api
-chromadb.api.client.SharedSystemClient.clear_system_cache()
 
 button(username="nofearhong", floating=True, width=221)
 
