@@ -16,6 +16,8 @@ import os
 from streamlit_extras.buy_me_a_coffee import button
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 from langchain.callbacks.base import BaseCallbackHandler
+import chromadb.api
+chromadb.api.client.SharedSystemClient.clear_system_cache()
 
 button(username="nofearhong", floating=True, width=221)
 
