@@ -1,3 +1,6 @@
+streamlit
+langchain-community
+langchain-openai
 langchain
 openai
 pypdf
